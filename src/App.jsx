@@ -26,7 +26,7 @@ function App() {
           <div className='mt-8 lg:hidden'>Webnya masih tahap BETA, Jadi Jangan Baper dulu🤞</div>
         </div>
         <div className="flex flex-col lg:w-1/2">
-          <div className='py-5 lg:p-5'>
+          <div className='py-5 p-100 lg:p-5'>
             <div className='font-bold text-2xl lg:text-3xl mb-2'>About Me</div>
             <div className='text-sm lg:text-base'>Saya adalah seorang individu yang memiliki ketertarikan yang kuat dalam dunia teknologi. Meskipun latar belakang pendidikan saya berasal dari pondok pesantren, minat saya terhadap teknologi telah mendorong saya untuk mengeksplorasi lebih jauh dalam bidang ini. Saat ini, saya sedang menempuh pendidikan di Universitas Duta Bangsa, di mana saya berusaha untuk mengembangkan pemahaman dan keterampilan saya dalam berbagai aspek teknologi.</div>
           </div>
