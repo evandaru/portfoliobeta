@@ -5,6 +5,7 @@ import Project from '../components/project'
 import Button from '../components/Button'
 import { faBlog, faFile, faX } from '@fortawesome/free-solid-svg-icons'
 import Skills from '../components/Skills'
+import { Tooltip } from 'react-tooltip'
 
 function Index() {
     return (
@@ -57,10 +58,6 @@ function Index() {
                             <div className='flex justify-between font-medium border-b'><span>Duta Bangsa University</span><span>July 2021 - Present</span></div>
                             <p className='font-thin'>Software Engineering / Informatics Engineering (GPA 3.80)</p>
                         </div>
-                        <div className='flex flex-col gap-2'>
-                            <div className='flex justify-between font-medium border-b'><span>Duta Bangsa University</span><span>July 2021 - Present</span></div>
-                            <p className='font-thin'>Software Engineering / Informatics Engineering (GPA 3.80)</p>
-                        </div>
                     </div>
                 } />
                 <Main skills="Skills" contain={
@@ -72,6 +69,7 @@ function Index() {
                         <Skills Icon={faPython} title="Design" />
                         <Skills Icon={faNode} title="Design" />
                         {/* <Skills Icon={} title="Design" /> */}
+                        <Tooltip id="my-tooltip" />
                     </div>
 
                 } />
