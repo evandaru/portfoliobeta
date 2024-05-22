@@ -1,11 +1,27 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faTwitter, faTelegram, faXTwitter, faJs, faHtml5, faCss3, faPhp, faPython, faNode, faWebAwesome } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faTwitter, faTelegram, faXTwitter, faJs, faHtml5, faCss3, faPhp, faPython, faNode, faWebAwesome, faMailchimp } from '@fortawesome/free-brands-svg-icons'
 import Main from '../components/Main'
 import Project from '../components/project'
 import Button from '../components/Button'
-import { faBlog, faFile, faX } from '@fortawesome/free-solid-svg-icons'
+import { faBlog, faEnvelope, faFile, faMailReply, faX } from '@fortawesome/free-solid-svg-icons'
 import Skills from '../components/Skills'
 import { Tooltip } from 'react-tooltip'
+import '../App.css'
+
+import Html from '/icon/html.svg'
+import Css from '/icon/css.svg'
+import js from '/icon/javascript.svg'
+import php from '/icon/php.svg'
+import tailwind from '/icon/tailwindcss.svg'
+import nodejs from '/icon/nodejs.svg'
+import python from '/icon/python.svg'
+import vite from '/icon/vitest.svg'
+import git from '/icon/git.svg'
+import figma from '/icon/figma.svg'
+import codeigniter from '/icon/codeigniter.svg'
+import laravel from '/icon/laravel.svg'
+import reactlogo from '/icon/react.svg'
+import reactnativelogo from '/icon/svgr.svg'
 
 function Index() {
     return (
@@ -15,30 +31,27 @@ function Index() {
                 <div className="font-m1 font-bold text-2xl mb-2">Fauzan Hasyim</div>
                 <p className='text-center '>Indonesia | Fullstuck Dev | AI enthusiasts </p>
                 <div className='text-2xl flex justify-center mt-3 '>
-                    <a href="https://github.com/evandaru" className='mx-2 lg:mx-4  text-gray-500'>
+                    <a href="https://github.com/evandaru" target="_blank" className='mx-2 lg:mx-4  text-gray-500'>
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
-                    <a href="www.linkedin.com/in/fauzan-hasyim-808a58217" className='mx-2 lg:mx-4  text-gray-500'>
+                    <a href="https://linkedin.com/in/fauzan-hasyim-808a58217" target="_blank" className='mx-2 lg:mx-4  text-gray-500'>
                         <FontAwesomeIcon icon={faLinkedin} />
                     </a>
-                    <a href="https://twitter.com/evndaru" className='mx-2 lg:mx-4  text-gray-500'>
-                        <FontAwesomeIcon icon={faXTwitter} />
-                    </a>
-                    <a href="https://t.me/evndaru" className='mx-2 lg:mx-4  text-gray-500'>
-                        <FontAwesomeIcon icon={faTelegram} />
+                    <a href="mailto:fauzanhasyimm@gmail.com" target="_blank" className='mx-2 lg:mx-4  text-gray-500'>
+                        <FontAwesomeIcon icon={faEnvelope} />
                     </a>
 
                 </div>
                 <div className='flex flex-row'>
                     <Button
                         Icon={faFile}
-                        link="#"
-                        title="View My CV"
+                        link="/readcv"
+                        title="Curriculum Vitae"
                     />
                     <Button
                         Icon={faWebAwesome}
-                        link="#"
-                        title="Read my Blog"
+                        link="/blog"
+                        title="My Blog"
                     />
                 </div>
                 <div>
@@ -61,15 +74,23 @@ function Index() {
                     </div>
                 } />
                 <Main skills="Skills" contain={
-                    <div className='flex flex-wrap'>
-                        <Skills Icon={faJs} title="JavaScript" />
-                        <Skills Icon={faHtml5} title="HTML" />
-                        <Skills Icon={faCss3} title="CSS" />
-                        <Skills Icon={faPhp} title="Design" />
-                        <Skills Icon={faPython} title="Design" />
-                        <Skills Icon={faNode} title="Design" />
+                    <div className='flex flex-wrap max-w-96'>
+                        <Skills Icon={Html} title="HTML" />
+                        <Skills Icon={Css} title="CSS" />
+                        <Skills Icon={js} title="JavaScript" />
+                        <Skills Icon={php} title="PHP" />
+                        <Skills Icon={python} title="Python" />
+                        <Skills Icon={tailwind} title="Tailwind" />
+                        <Skills Icon={git} title="Git" />
+                        <Skills Icon={vite} title="vite" />
+                        <Skills Icon={reactlogo} title="React Js" />
+                        <Skills Icon={reactnativelogo} title="React Native" />
+                        <Skills Icon={nodejs} title="Node JS" />
+                        <Skills Icon={laravel} title="Laravel" />
+                        <Skills Icon={codeigniter} title="Codeigniter" />
+                        <Skills Icon={figma} title="Figma" />
                         {/* <Skills Icon={} title="Design" /> */}
-                        <Tooltip id="my-tooltip" />
+                        <Tooltip id="my-tooltip" className="style-tooltip-hik" />
                     </div>
 
                 } />
@@ -83,7 +104,7 @@ function Index() {
                 </div>} />
 
 
-                <Main skills="" contain="" />
+                {/* <Main skills="" contain="" /> */}
 
 
 
