@@ -22,30 +22,28 @@ import codeigniter from '/icon/codeigniter.svg'
 import laravel from '/icon/laravel.svg'
 import reactlogo from '/icon/react.svg'
 import reactnativelogo from '/icon/svgr.svg'
+import Medsos from '../components/Medsos'
+import Photo from '/photo.jpg'
 
 function Index() {
     return (
         <div className="flex flex-col lg:flex-row font-m1 justify-center items-center min-h-screen bg-slate-50">
             <div className="flex flex-col justify-center items-center lg:w-1/2 p-8">
-                <img className='w-28 rounded-full mb-5' src="https://i.pinimg.com/564x/67/73/88/6773889af5019c050eac31426e81a3eb.jpg" alt="" />
-                <div className="font-m1 font-bold text-2xl mb-2">Fauzan Hasyim</div>
-                <p className='text-center '>Indonesia | Fullstuck Dev | AI enthusiasts </p>
-                <div className='text-2xl flex justify-center mt-3 '>
-                    <a href="https://github.com/evandaru" target="_blank" className='mx-2 lg:mx-4  text-gray-500'>
-                        <FontAwesomeIcon icon={faGithub} />
-                    </a>
-                    <a href="https://linkedin.com/in/fauzan-hasyim-808a58217" target="_blank" className='mx-2 lg:mx-4  text-gray-500'>
-                        <FontAwesomeIcon icon={faLinkedin} />
-                    </a>
-                    <a href="mailto:fauzanhasyimm@gmail.com" target="_blank" className='mx-2 lg:mx-4  text-gray-500'>
-                        <FontAwesomeIcon icon={faEnvelope} />
-                    </a>
-
+                <img className='w-28 rounded-full mb-5'
+                    // src="https://i.pinimg.com/564x/67/73/88/6773889af5019c050eac31426e81a3eb.jpg"
+                    src={Photo  }
+                    alt="" />
+                <div className="font-m1 font-bold text-2xl mb-2">Fauzan Hasyim Muthohhar</div>
+                <p className='text-center '>🌐 Indonesia | 👩‍💻 Software Engineer </p>
+                <div className='text-2xl flex justify-center mt-1 '>
+                    <Medsos Icon={faGithub} title="Github" link="https://github.com/evandaru" />
+                    <Medsos Icon={faLinkedin} title="Linkedin" link="https://linkedin.com/in/fauzan-hasyim" />
+                    <Medsos Icon={faEnvelope} title="Email" link="mailto:fauzanhasyimm@gmail.com" />
                 </div>
-                <div className='flex flex-row'>
+                <div className='flex flex-row max-sm:flex-col'>
                     <Button
                         Icon={faFile}
-                        link="/readcv"
+                        link="https://docs.google.com/document/d/11XI9lp69a66evs3m0hHtsm_S_LnA8ay1J0I6m1uygzc/edit?usp=sharing"
                         title="Curriculum Vitae"
                     />
                     <Button
@@ -79,7 +77,6 @@ function Index() {
                         <Skills Icon={Css} title="CSS" />
                         <Skills Icon={js} title="JavaScript" />
                         <Skills Icon={php} title="PHP" />
-                        <Skills Icon={python} title="Python" />
                         <Skills Icon={tailwind} title="Tailwind" />
                         <Skills Icon={git} title="Git" />
                         <Skills Icon={vite} title="vite" />
@@ -96,8 +93,27 @@ function Index() {
                 } />
                 <Main skills="Projects" contain={<div className='flex flex-wrap'>
                     <Project
-                        title="Web Perpus"
-                        deskripsi="website dibuat saat tugas uas"
+                        title="Library Website"
+                        shortDescription="Creating a website for ..."
+                        fullDescription="Creating a website for managing library books using Laravel and SQL database. This website has two types of users, admin and user, with different features according to their roles."
+                        link="https://github.com/evandaru/restfull-ikan"
+                    />
+                    <Project
+                        title="Lele Bot"
+                        shortDescription="Telegram Bot equipped with ..."
+                        fullDescription="Telegram Bot equipped with CRUD features (Create, Read, Update, Delete). Integrated with Groq AI and supports features to download videos from YouTube."
+                        link="https://github.com/evandaru/restfull-ikan"
+                    />
+                    <Project
+                        title="Donation Website"
+                        shortDescription="Building a website for ..."
+                        fullDescription="Building a website for managing donations by displaying financial information collected during Ramadan."
+                        link="https://github.com/evandaru/restfull-ikan"
+                    />
+                    <Project
+                        title="Tahsin Website"
+                        shortDescription="Creating a website focused on ..."
+                        fullDescription="Creating a website focused on the Landing page and featuring registration, integrated using spreadsheets database."
                         link="https://github.com/evandaru/restfull-ikan"
                     />
 
