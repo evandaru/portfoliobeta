@@ -37,7 +37,7 @@ function Index() {
                 <p className='text-center '>🌐 Indonesia | 👩‍💻 Software Engineer </p>
                 <div className='text-2xl flex justify-center mt-1 '>
                     <Medsos Icon={faGithub} title="Github" link="https://github.com/evandaru" />
-                    <Medsos Icon={faLinkedin} title="Linkedin" link="https://linkedin.com/in/fauzan-hasyim" />
+                    <Medsos Icon={faLinkedin} title="Linkedin" link="https://www.linkedin.com/in/fauzan-hasyim-808a58217/" />
                     <Medsos Icon={faEnvelope} title="Email" link="mailto:fauzanhasyimm@gmail.com" />
                     <Medsos Icon={faFile} title="Read CV" link="https://docs.google.com/document/d/11XI9lp69a66evs3m0hHtsm_S_LnA8ay1J0I6m1uygzc/edit?usp=sharing" />
                 </div>
@@ -98,14 +98,14 @@ function Index() {
                         shortDescription="Creating a website for ..."
                         fullDescription="Creating a website for managing library books using Laravel and SQL database. This website has two types of users, admin and user, with different features according to their roles."
                         link="https://github.com/evandaru/restfull-ikan"
-                       
+
                     />
                     <Project
                         title="Lele Bot"
                         shortDescription="Telegram Bot equipped with ..."
                         fullDescription="Telegram Bot equipped with CRUD features (Create, Read, Update, Delete). Integrated with Groq AI and supports features to download videos from YouTube."
                         link="https://github.com/evandaru/restfull-ikan"
-                        
+
                     />
                     <Project
                         title="Donation Website"
