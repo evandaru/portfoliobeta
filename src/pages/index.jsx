@@ -31,9 +31,9 @@ function Index() {
             <div className="flex flex-col justify-center items-center lg:w-1/2 p-8">
                 <img className='w-28 rounded-full mb-5'
                     // src="https://i.pinimg.com/564x/67/73/88/6773889af5019c050eac31426e81a3eb.jpg"
-                    src={Photo  }
+                    src={Photo}
                     alt="" />
-                <div className="font-m1 font-bold text-2xl mb-2">Fauzan Hasyim Muthohhar</div>
+                <div className="font-m1 font-bold text-2xl text-center mb-2">Fauzan Hasyim Muthohhar</div>
                 <p className='text-center '>🌐 Indonesia | 👩‍💻 Software Engineer </p>
                 <div className='text-2xl flex justify-center mt-1 '>
                     <Medsos Icon={faGithub} title="Github" link="https://github.com/evandaru" />
