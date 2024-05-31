@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import Tag from './tag';
+
 
 function Project({ title, shortDescription, fullDescription, link }) {
     return (
@@ -13,11 +13,7 @@ function Project({ title, shortDescription, fullDescription, link }) {
                 <p className="font-thin transition-all duration-300 ease-in-out delay-300 opacity-0 group-hover:opacity-100">{fullDescription}</p>
             </div>
             <div>
-                {/* <Tag
-                    title="lele"
-                    color="black-100"
-                    icon={faGithub}
-                /> */}
+               
             </div>
         </a>
     );
