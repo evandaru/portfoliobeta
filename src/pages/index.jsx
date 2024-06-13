@@ -24,7 +24,7 @@ import reactlogo from '/icon/react.svg'
 import reactnativelogo from '/icon/svgr.svg'
 import Medsos from '../components/Medsos'
 import Photo from '/photo.jpg'
-import Tag from '../components/tag'
+import Tag from '../components/Tag'
 
 function Index() {
     return (
