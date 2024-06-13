@@ -1,10 +1,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import Tag from './tag';
+import Tag from './Tag';
 
 
-function Project({ title, shortDescription, fullDescription, link ,tag}) {
+function Project({ title, shortDescription, fullDescription, link, tag }) {
     return (
         <a className="font-bold" href={link} target='_blank'>
             <div className="border rounded-lg border-gray-300 p-4 m-2 transition-all duration-300 overflow-hidden max-h-14  group hover:max-h-96  delay-300 max-sm:max-h-16">
