@@ -102,7 +102,7 @@ function Index() {
                         <a target="_blank" href="https://github.com/evandaru">Click here to more</a>
                     </div>
                     <Project
-                        title="Library Website"
+                        title="Perpus RPL"
                         shortDescription="Creating a website for ..."
                         fullDescription="Creating a website for managing library books using Laravel and SQL database. This website has two types of users, admin and user, with different features according to their roles."
                         link="https://github.com/evandaru/perpusrpl"
