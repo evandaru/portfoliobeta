@@ -3,7 +3,7 @@ import { faGithub, faLinkedin, faTwitter, faTelegram, faXTwitter, faJs, faHtml5,
 import Main from '../components/Main'
 import Project from '../components/project'
 import Button from '../components/Button'
-import { faBlog, faEnvelope, faFile, faMailReply, faX } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faBlog, faEnvelope, faFile, faMailReply, faX } from '@fortawesome/free-solid-svg-icons'
 import Skills from '../components/Skills'
 import { Tooltip } from 'react-tooltip'
 import '../App.css'
@@ -24,6 +24,7 @@ import reactlogo from '/icon/react.svg'
 import reactnativelogo from '/icon/svgr.svg'
 import Medsos from '../components/Medsos'
 import Photo from '/photo.jpg'
+import Tag from '../components/tag'
 
 function Index() {
     return (
@@ -31,10 +32,12 @@ function Index() {
             <div className="flex flex-col justify-center items-center lg:w-1/2 p-8">
                 <img className='w-28 rounded-full mb-5'
                     // src="https://i.pinimg.com/564x/67/73/88/6773889af5019c050eac31426e81a3eb.jpg"
+                    // src="https://drive.google.com/uc?id=10-riQdLRFW_Wkouzp-KdUcGWsGAIpr89" alt="Description of the image"
+                    // src='https://drive.usercontent.google.com/download?id=10-riQdLRFW_Wkouzp-KdUcGWsGAIpr89&authuser=0'
                     src={Photo}
-                    alt="" />
+                />
                 <div className="font-m1 font-bold text-2xl text-center mb-2">Fauzan Hasyim Muthohhar</div>
-                <p className='text-center '>🌐 Indonesia | 👩‍💻 Software Engineer </p>
+                <p className='text-center '>🌐 Indonesia | 👩‍💻 Junior Software Engineer </p>
                 <div className='text-2xl flex justify-center mt-1 '>
                     <Medsos Icon={faGithub} title="Github" link="https://github.com/evandaru" />
                     <Medsos Icon={faLinkedin} title="Linkedin" link="https://www.linkedin.com/in/fauzan-hasyim-808a58217/" />
@@ -47,10 +50,10 @@ function Index() {
                         link="https://docs.google.com/document/d/11XI9lp69a66evs3m0hHtsm_S_LnA8ay1J0I6m1uygzc/edit?usp=sharing"
                         title="Curriculum Vitae"
                     /> */}
-                    {/* <Button
-                        Icon={faWebAwesome}
-                        link="/blog"
-                        title="My Blog"
+                    {/* <Button 
+                    Icon={faWebAwesome} 
+                    link="/blog" 
+                    title="My Blog"
                     /> */}
                 </div>
                 <div>
@@ -61,14 +64,14 @@ function Index() {
 
 
             <div className="px-10 flex flex-col lg:w-1/2 lg:px-0">
-                <Main skills="Introduction" contain="Hello there! Welcome to our corner of GitHub. We're just a bunch of ordinary folks trying to make our mark in the vast digital landscape. Whether you're a seasoned developer or a curious newcomer, we're glad to have you here!" />
+                <Main skills="Introduction" contain="Hey there! I'm fauzan hasyim, a passionate junior web developer on a mission to bring ideas to life in pixels. With a love for clean code and pixel-perfect designs, I thrive on crafting seamless user experiences that leave a lasting impression. Let's build something awesome together!" />
                 {/* <Main skills="About Me" contain="I am an individual with a strong interest in the world of technology. Despite my educational background originating from a pesantren (Islamic boarding school), my interest in technology has driven me to explore further in this field. Currently, I am pursuing my education at Duta Bangsa University, where I strive to develop my understanding and skills in various aspects of technology." /> */}
                 <Main skills="Education" contain={
                     <div className='flex flex-col gap-5'>
 
                         <div className='flex flex-col gap-2'>
                             <div className='flex justify-between font-medium border-b'><span>Duta Bangsa University</span><span>July 2021 - Present</span></div>
-                            <p className='font-thin'>Software Engineering / Informatics Engineering (GPA 3.80)</p>
+                            <p className='font-thin'> Software Engineering / Informatics Engineering (GPA 3.80)</p>
                         </div>
                     </div>
                 } />
@@ -92,12 +95,24 @@ function Index() {
                     </div>
 
                 } />
+
                 <Main skills="Projects" contain={<div className='flex flex-wrap'>
+                    <div className='flex flex-row justify-center items-center gap-2'>
+                        <FontAwesomeIcon icon={faArrowRight} />
+                        <a target="_blank" href="https://github.com/evandaru">Click here to more</a>
+                    </div>
                     <Project
                         title="Library Website"
                         shortDescription="Creating a website for ..."
                         fullDescription="Creating a website for managing library books using Laravel and SQL database. This website has two types of users, admin and user, with different features according to their roles."
-                        link="https://github.com/evandaru/restfull-ikan"
+                        link="https://github.com/evandaru/perpusrpl"
+                        tag={<div className='flex gap-1 pt-2 flex-row'>
+                            <Tag status="Incompleted" />
+                            <Tag status="php" />
+                            <Tag status="Open Source" />
+                            <Tag status="MySql" />
+                        </div>
+                        }
 
                     />
                     <Project
@@ -105,19 +120,42 @@ function Index() {
                         shortDescription="Telegram Bot equipped with ..."
                         fullDescription="Telegram Bot equipped with CRUD features (Create, Read, Update, Delete). Integrated with Groq AI and supports features to download videos from YouTube."
                         link="https://github.com/evandaru/restfull-ikan"
+                        tag={<div className='flex gap-1 pt-2 flex-row'>
+                            <Tag status="Incompleted" />
+                            <Tag status="Javascript" />
+                            <Tag status="Telegram" />
+                            <Tag status="LowDB" />
+                        </div>
+                        }
 
                     />
                     <Project
                         title="Donation Website"
                         shortDescription="Building a website for ..."
                         fullDescription="Building a website for managing donations by displaying financial information collected during Ramadan."
-                        link="https://github.com/evandaru/restfull-ikan"
+                        link="https://github.com/evandaru/donatur"
+                        tag={<div className='flex gap-1 pt-2 flex-row'>
+                            <Tag status="Incompleted" />
+                            <Tag status="Javascript" />
+                            <Tag status="vite Js" />
+                            <Tag status="React JS" />
+                            <Tag status="Notion" />
+                        </div>
+                        }
                     />
                     <Project
                         title="Tahsin Website"
                         shortDescription="Creating a website focused on ..."
                         fullDescription="Creating a website focused on the Landing page and featuring registration, integrated using spreadsheets database."
-                        link="https://github.com/evandaru/restfull-ikan"
+                        link="https://github.com/evandaru/quranfirst-tapilaravel"
+                        tag={<div className='flex gap-1 pt-2 flex-row'>
+                            <Tag status="Incompleted" />
+                            <Tag status="Laravel" />
+                            <Tag status="Spreadsheet" />
+                            <Tag status="IslamicWeb" />
+                        </div>
+                        }
+
                     />
 
                 </div>} />
