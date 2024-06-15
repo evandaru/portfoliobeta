@@ -64,14 +64,14 @@ function Index() {
 
 
             <div className="px-10 flex flex-col lg:w-1/2 lg:px-0">
-                <Main skills="Introduction" contain="Hey there! I'm fauzan hasyim, a passionate junior web developer on a mission to bring ideas to life in pixels. With a love for clean code and pixel-perfect designs, I thrive on crafting seamless user experiences that leave a lasting impression. Let's build something awesome together!" />
+                <Main skills="Introduction" contain="Hi, I'm Fauzan Hasyim, a junior web developer with a passion for transforming ideas into visually stunning and functional websites. I thrive on writing clean code and creating pixel-perfect designs. Let's collaborate and create something amazing together!" />
                 {/* <Main skills="About Me" contain="I am an individual with a strong interest in the world of technology. Despite my educational background originating from a pesantren (Islamic boarding school), my interest in technology has driven me to explore further in this field. Currently, I am pursuing my education at Duta Bangsa University, where I strive to develop my understanding and skills in various aspects of technology." /> */}
                 <Main skills="Education" contain={
                     <div className='flex flex-col gap-5'>
 
                         <div className='flex flex-col gap-2'>
                             <div className='flex justify-between font-medium border-b'><span>Duta Bangsa University</span><span>July 2021 - Present</span></div>
-                            <p className='font-thin'> Software Engineering / Informatics Engineering (GPA 3.80)</p>
+                            <p className='font-thin'> Computer Science / Informatics Engineering (GPA 3.80)</p>
                         </div>
                     </div>
                 } />
@@ -119,7 +119,7 @@ function Index() {
                         title="Lele Bot"
                         shortDescription="Telegram Bot equipped with ..."
                         fullDescription="Telegram Bot equipped with CRUD features (Create, Read, Update, Delete). Integrated with Groq AI and supports features to download videos from YouTube."
-                        link="https://github.com/evandaru/restfull-ikan"
+                        link="https://github.com/evandaru/bottelecrud"
                         tag={<div className='flex gap-1 pt-2 flex-row'>
                             <Tag status="Incompleted" />
                             <Tag status="Javascript" />
