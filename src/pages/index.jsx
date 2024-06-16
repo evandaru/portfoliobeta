@@ -99,7 +99,7 @@ function Index() {
                 <Main skills="Projects" contain={<div className='flex flex-wrap'>
                     <div className='flex flex-row justify-center items-center gap-2'>
                         <FontAwesomeIcon icon={faArrowRight} />
-                        <a target="_blank" href="https://github.com/evandaru">Click here to more</a>
+                        <a target="_blank" href="https://github.com/evandaru">Click here for more</a>
                     </div>
                     <Project
                         title="Perpus RPL"
