@@ -106,7 +106,7 @@ function Index() {
                         shortDescription="Creating a website for ..."
                         fullDescription="Creating a website for managing library books using Laravel and SQL database. This website has two types of users, admin and user, with different features according to their roles."
                         link="https://github.com/evandaru/perpusrpl"
-                        tag={<div className='flex gap-1 pt-2 flex-row'>
+                        tag={<div className='flex gap-1 pt-2 flex-wrap'>
                             <Tag status="Incompleted" />
                             <Tag status="php" />
                             <Tag status="Open Source" />
@@ -120,7 +120,7 @@ function Index() {
                         shortDescription="Telegram Bot equipped with ..."
                         fullDescription="Telegram Bot equipped with CRUD features (Create, Read, Update, Delete). Integrated with Groq AI and supports features to download videos from YouTube."
                         link="https://github.com/evandaru/bottelecrud"
-                        tag={<div className='flex gap-1 pt-2 flex-row'>
+                        tag={<div className='flex gap-1 pt-2 flex-wrap'>
                             <Tag status="Incompleted" />
                             <Tag status="Javascript" />
                             <Tag status="Telegram" />
@@ -134,7 +134,7 @@ function Index() {
                         shortDescription="Building a website for ..."
                         fullDescription="Building a website for managing donations by displaying financial information collected during Ramadan."
                         link="https://github.com/evandaru/donatur"
-                        tag={<div className='flex gap-1 pt-2 flex-row'>
+                        tag={<div className='flex gap-1 pt-2 flex-wrap'>
                             <Tag status="Incompleted" />
                             <Tag status="Javascript" />
                             <Tag status="vite Js" />
@@ -148,7 +148,7 @@ function Index() {
                         shortDescription="Creating a website focused on ..."
                         fullDescription="Creating a website focused on the Landing page and featuring registration, integrated using spreadsheets database."
                         link="https://github.com/evandaru/quranfirst-tapilaravel"
-                        tag={<div className='flex gap-1 pt-2 flex-row'>
+                        tag={<div className='flex gap-1 pt-2 flex-wrap'>
                             <Tag status="Incompleted" />
                             <Tag status="Laravel" />
                             <Tag status="Spreadsheet" />

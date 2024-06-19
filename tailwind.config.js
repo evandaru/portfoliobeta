@@ -14,6 +14,7 @@ export default {
         'lg': '2rem',
         base: '1rem',
         'sm': '13px',
+        'ssm': '10px',
         // Kamu bisa menambahkan ukuran font yang lebih kecil lagi sesuai kebutuhanmu
       },
       textColor: {
