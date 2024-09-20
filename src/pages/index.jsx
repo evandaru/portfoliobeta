@@ -42,7 +42,7 @@ function Index() {
                     <Medsos Icon={faGithub} title="Github" link="https://github.com/evandaru" />
                     <Medsos Icon={faLinkedin} title="Linkedin" link="https://www.linkedin.com/in/fauzan-hasyim-808a58217/" />
                     <Medsos Icon={faEnvelope} title="Email" link="mailto:fauzanhasyimm@gmail.com" />
-                    <Medsos Icon={faFile} title="Read CV" link="https://docs.google.com/document/d/11XI9lp69a66evs3m0hHtsm_S_LnA8ay1J0I6m1uygzc/edit?usp=sharing" />
+                    {/* <Medsos Icon={faFile} title="Read CV" link="https://docs.google.com/document/d/11XI9lp69a66evs3m0hHtsm_S_LnA8ay1J0I6m1uygzc/edit?usp=sharing" /> */}
                 </div>
                 <div className='flex flex-row max-sm:flex-col'>
                     {/* <Button
